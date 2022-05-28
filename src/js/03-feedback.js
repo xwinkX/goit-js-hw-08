@@ -19,8 +19,8 @@ valueTextarea();
 function onFormSubmit(event) {
   event.preventDefault();
   event.currentTarget.reset();
+  console.log(localStorage.getItem(MESSAGE_KEY));
   localStorage.removeItem(MESSAGE_KEY);
-  console.log(formData);
 }
 
 function valueTextarea() {
